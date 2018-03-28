@@ -1,0 +1,62 @@
+/* body of page */
+body {
+margin: 0;
+height: 100%;
+overflow: hidden;
+}
+
+/* beginners level button */
+button#button1 { 
+position: absolute;
+background-color: #a8e6cf ;
+color: white;
+height: 300px;
+width: 330px;
+font-size: 50px;
+margin-left : 250px; 
+margin-top : 120px; 
+box-shadow: 5px 6px #CDCDCD;
+font-family: Baloo Bhaijaan;
+border: none;
+} 
+
+/* intermediate level button */
+button#button2 { 
+position: absolute;
+background-color: #a8e6cf ;
+color: white;
+height: 300px;
+width: 330px;
+font-size: 50px;
+margin-left : 690px; 
+margin-top : 120px; 
+box-shadow: 5px 6px #CDCDCD;
+font-family: Baloo Bhaijaan;
+cursor: not-allowed;
+border: none;
+} 
+
+/* button hover */
+#button1:hover {
+color: #FFAAA6;
+}
+
+#button2:hover {
+color: #FFAAA6;
+}
+
+/* lock-icon in intermediate level button */
+i.fa {
+color: gray;
+position: absolute;
+z-index: 99;
+left: 132px;
+top: 100px;
+font-size: 100px;
+opacity: 0.8;
+}
+
+/* tooltip */
+.btn + .tooltip .tooltip-inner {
+font-size: 20px;
+}

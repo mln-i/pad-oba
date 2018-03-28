@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="nl"> 
+	<head> 
+		<title>Selecteren</title> 
+		<meta charset="utf-8"></meta> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta> 
+		
+		<!-- muis-selecteren stylesheet -->
+		<link rel="stylesheet" href="muis-selecteren.css"></link> 
+
+		<!-- font awesome stylesheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+		<!-- google fonts stylesheet -->
+		<link href='https://fonts.googleapis.com/css?family=Baloo Bhaijaan' rel='stylesheet'></link>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		
+		<!-- muis-selecteren javascript -->
+		<script src="muis-selecteren.js"></script>
+		
+		<!-- bootstrap 3 stylesheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+		
+		<!-- bootstrap 4 stylesheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></link>
+	
+	</head> 
+
+	<!-- body of the page -->
+	<body> 
+
+		<!-- progress bar at the top of the page -->
+		<div class="bar"></div>
+
+		<div class="container">
+			<canvas class="canvas" width="800" height="500"></canvas>
+
+			<!-- circles within the canvas -->			
+			<span class="dot">h</span>
+			<span class="dot2">h</span>
+			<span class="dot3">h</span>
+		</div>
+
+		<div class="container">
+			<!-- button displays instruction video -->
+			<button id="button1" type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i><br/>Video uitleg</button> 
+
+			<!-- The Modal -->
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+					
+					<!-- modal header -->
+						<div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<iframe width="720" height="460"
+									src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allowfullscreen=""></iframe>
+						</div>
+						<div class="modal-footer"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- button activates audio instructions -->
+			<button id="button2" type="button" class="btn btn-outline-secondary" disabled><i class="fa fa-volume-up" ></i><br/>Audio uitleg</button> 
+
+			<!-- button activates the next assignment -->
+			<button id="button3" type="button" class="btn btn-outline-secondary" >Klik om naar de volgende opdracht te gaan</button>
+		</div>
+
+	</body> 
+</html>

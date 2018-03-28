@@ -1,0 +1,29 @@
+.fa-check-circle {
+  display: none;
+  position: absolute;
+  margin-left: 340px;
+  margin-top: -400px;
+  font-size: 250px;
+  color: #73AF55;
+  animation: pulse 1s ease-in-out 0s 4;
+}
+
+.fa-times-circle {
+  font-size: 250px;
+  color: #D06079;
+  animation: shake 1s ease-in-out 0s 4;
+}
+
+@-webkit-keyframes pulse {
+    0% {transform: scale(1); }
+    50% {transform: scale(1.1); }
+    100% {transform: scale(1); }
+}
+
+@-webkit-keyframes shake {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}

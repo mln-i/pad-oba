@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html lang="nl"> 
+	<head> 
+		<title>Typen</title> 
+		<meta charset="utf-8"></meta> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta> 
+
+		<!-- muis-selecteren stylesheet -->
+		<link rel="stylesheet" href="toetsenbord-typen.css"></link> 
+
+		<!-- font awesome stylesheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+		<!-- google fonts stylesheet -->
+		<link href='https://fonts.googleapis.com/css?family=Baloo Bhaijaan' rel='stylesheet'></link>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		
+		<!-- bootstrap 3 stylesheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+
+		<!-- bootstrap 4 stylesheet -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></link>
+
+		<!-- muis-selecteren javascript -->
+		<script src="toetsenbord-typen.js"></script>
+	</head> 
+
+	<!-- body of the page -->
+	<body> 
+
+		<!-- progress bar at the top of the page -->
+		<div class="bar"></div>
+
+		<div class="container">
+			<canvas class="canvas" width="800" height="500"></canvas>
+
+			<div class="exampletext">bloem</div>
+			
+			<form class="input">
+				<input id="text1" class="text" type="text" autofocus="autofocus" maxlength="1">
+				<input id="text2" class="text" type="text" autofocus="autofocus" maxlength="1">
+				<input id="text3" class="text" type="text" autofocus="autofocus" maxlength="1">
+				<input id="text4" class="text" type="text" autofocus="autofocus" maxlength="1">
+				<input id="text5" class="text" type="text" autofocus="autofocus" maxlength="1">
+				</form>
+
+				<div class="containerkeyboard">
+					<button id="btn" type="button" class="btnk">Esc</button>
+					<button id="btn1" type="button" class="btnk">F1</button>
+					<button id="btn2" type="button" class="btnk">F2</button>
+					<button id="btn3" type="button" class="btnk">F3</button>
+					<button id="btn4" type="button" class="btnk">F4</button>
+					<button id="btn5" type="button" class="btnk">F5</button>
+					<button id="btn6" type="button" class="btnk">F6</button>
+					<button id="btn7" type="button" class="btnk">F7</button>
+					<button id="btn8" type="button" class="btnk">F8</button>
+					<button id="btn9" type="button" class="btnk">F9</button>
+					<button id="btn10" type="button" class="btnk">F10</button>
+					<button id="btn11" type="button" class="btnk">F11</button>
+					<button id="btn12" type="button" class="btnk">F12</button><br/>
+
+					<button id="btn13" type="button" class="btnk">~ `</button>
+					<button id="btn14" type="button" class="btnk">! 1</button>
+					<button id="btn15" type="button" class="btnk">@ 2</button>
+					<button id="btn16" type="button" class="btnk"># 3</button>
+					<button id="btn17" type="button" class="btnk">$ 4</button>
+					<button id="btn18" type="button" class="btnk">% 5</button>
+					<button id="btn19" type="button" class="btnk">^ 6</button>
+					<button id="btn20" type="button" class="btnk">& 7</button>
+					<button id="btn21" type="button" class="btnk">* 8</button>
+					<button id="btn22" type="button" class="btnk">( 9</button>
+					<button id="btn23" type="button" class="btnk">) 10</button>
+					<button id="btn24" type="button" class="btnk">- _</button>
+					<button id="btn25" type="button" class="btnk">+ =</button>
+					<button id="btn27" type="button" class="btnk">backspace</button><br/>
+
+					<button id="btn28" type="button" class="btnk">tab</button>
+					<button id="btn29" type="button" class="btnk">Q</button>
+					<button id="btn30" type="button" class="btnk">W</button>
+					<button id="btn31" type="button" class="btnk">E</button>
+					<button id="btn32" type="button" class="btnk">R</button>
+					<button id="btn33" type="button" class="btnk">T</button>
+					<button id="btn34" type="button" class="btnk">Y</button>
+					<button id="btn35" type="button" class="btnk">U</button>
+					<button id="btn36" type="button" class="btnk">I</button>
+					<button id="btn37" type="button" class="btnk">O</button>
+					<button id="btn38" type="button" class="btnk">P</button>
+					<button id="btn39" type="button" class="btnk">[ {</button>
+					<button id="btn40" type="button" class="btnk">] }</button>
+					<button id="btn26" type="button" class="btnk">\ |</button><br/>
+
+
+					<button id="btn42" type="button" class="btnk">caps lock</button>
+					<button id="btn43" type="button" class="btnk">A</button>
+					<button id="btn44" type="button" class="btnk">S</button>
+					<button id="btn45" type="button" class="btnk">D</button>
+					<button id="btn46" type="button" class="btnk">F</button>
+					<button id="btn47" type="button" class="btnk">G</button>
+					<button id="btn48" type="button" class="btnk">H</button>
+					<button id="btn49" type="button" class="btnk">J</button>
+					<button id="btn50" type="button" class="btnk">K</button>
+					<button id="btn51" type="button" class="btnk">L</button>
+					<button id="btn52" type="button" class="btnk">; :</button>
+					<button id="btn53" type="button" class="btnk">' "</button>
+					<button id="btn41" type="button" class="btnk">enter</button><br/>
+
+					<button id="btn54" type="button" class="btnk">shift</button>
+					<button id="btn55" type="button" class="btnk">Z</button>
+					<button id="btn56" type="button" class="btnk">X</button>
+					<button id="btn57" type="button" class="btnk">C</button>
+					<button id="btn58" type="button" class="btnk">V</button>
+					<button id="btn59" type="button" class="btnk">B</button>
+					<button id="btn60" type="button" class="btnk">N</button>
+					<button id="btn61" type="button" class="btnk">M</button>
+					<button id="btn62" type="button" class="btnk">, <</button>
+							<button id="btn63" type="button" class="btnk">. ></button>
+							<button id="btn64" type="button" class="btnk">/ ?</button>
+							<button id="btn65" type="button" class="btnk">shift</button><br/>
+
+							<button id="btn66" type="button" class="btnk">ctrl</button>
+							<button id="btn67" type="button" class="btnk"><i class="fa fa-windows"></i></button>
+							<button id="btn68" type="button" class="btnk">alt</button>
+							<button id="btn69" type="button" class="btnk"></button>
+							<button id="btn70" type="button" class="btnk">alt gr</button>
+							<button id="btn71" type="button" class="btnk"><i class="fa fa-windows"></i></button>
+							<button id="btn72" type="button" class="btnk"></button>
+							<button id="btn73" type="button" class="btnk">ctrl</button>
+						</div> 
+					</div>
+
+					<div class="container">
+						<!-- button displays instruction video -->
+						<button id="button1" type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal"><i id="icon" class="fa fa-eye"></i><br/>Video uitleg</button> 
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+
+									<!-- modal header -->
+									<div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+
+									<!-- Modal body -->
+									<div class="modal-body">
+										<iframe width="720" height="460"
+												src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allowfullscreen=""></iframe>
+									</div>
+									<div class="modal-footer"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- button activates audio instructions -->
+						<button id="button2" type="button" class="btn btn-outline-secondary" disabled><i id="icon" class="fa fa-volume-up" ></i><br/>Audio uitleg</button> 
+
+						<!-- button activates the next assignment -->
+						<button id="button3" type="button" class="btn btn-outline-secondary" disabled>Klik om naar de volgende opdracht te gaan</button>
+					</div>
+
+				</body> 
+			</html>

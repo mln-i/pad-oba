@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MuisClickBeginner1.2</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <!-- muisKlikBeginner1.2 stylesheet -->
+  <link rel="stylesheet" href="MuisKlikBeginner1.2.css">
+  <!-- google fonts stylesheet -->
+  <link href='https://fonts.googleapis.com/css?family=Baloo Bhaijaan' rel='stylesheet'></link>
+  <!-- Feedback Icons stylesheet -->
+  <link rel="stylesheet" href="../UserFeedback/FeedbackIcons.css">
+</head>
+
+<body>
+
+  <!-- progress bar at the top of the page -->
+  <div class="bar"></div>
+
+  <div class="container">
+    <canvas class="canvas" width="800" height="500"></canvas>
+  </div>
+
+  <div class="container">
+    <!-- button displays instruction video -->
+    <button id="button1" type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i><br/>Video uitleg</button>
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- modal header -->
+          <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+
+          <!-- Modal body -->
+          <div class="text-center modal-body">
+            <iframe width="720" height="460" src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allowfullscreen=""></iframe>
+
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Bouncing arrow -->
+    <div class="text-center arrow bounce">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- button activates audio instructions -->
+    <button id="button2" type="button" class="btn btn-outline-secondary" disabled><i class="fa fa-volume-up" ></i><br/>Audio uitleg</button>
+
+    <!-- button activates the next assignment -->
+    <button id="button3" type="button" class="btn btn-outline-secondary">Klik om naar de volgende opdracht te gaan</button>
+
+    <!-- Toggle opdrachtModal button -->
+    <button id="opdrachtButton" type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#opdrachtModal"><i class="fas fa-mouse-pointer"></i><br/>Klik op de knop!</button>
+
+    <!-- opdrachtModal -->
+    <div class="modal fade" id="opdrachtModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- modal header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Druk op het kruisje om deze popup te sluiten!</p>
+            <!-- <i class="fas fa-times-circle"></i> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!-- Fontawesome checkmark i-tag -->
+    <i id="checkmark" class="fas fa-check-circle"></i>
+    <!-- Bootstrap -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <!-- muisKlikBeginner1.2 script -->
+    <script src="MuisKlikBeginner1.2.js"></script>
+
+</body>
+
+</html>

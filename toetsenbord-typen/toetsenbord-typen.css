@@ -1,0 +1,207 @@
+/* body of page */
+body {
+margin: 0;
+height: 100%;
+overflow: hidden;
+}
+
+/* assignment canvas */
+canvas.canvas {
+border-style: solid;
+border-radius: 10px;
+border-color: #CCCCCC;
+border-width: 2px;
+margin-left : 40px; 
+margin-top: 20px;
+}
+
+/* instruction video button */
+button#button1 { 
+position: absolute;
+top: 119px;
+background-color: #a8e6cf ;
+color: white;
+height: 100px;
+width: 130px;
+font-size: 18px;
+margin-left : 880px; 
+box-shadow: 3px 4px #CDCDCD;
+font-family: Baloo Bhaijaan;
+border: none;
+} 
+
+/* audio instruction video */
+button#button2 { 
+position: absolute;
+top: 240px;
+background-color: #a8e6cf ;
+color: white;
+height: 100px;
+width: 130px;
+font-size: 18px;
+margin-left : 880px; 
+box-shadow: 3px 4px #CDCDCD;
+font-family: Baloo Bhaijaan;
+border: none;
+} 
+
+/* next assignment button */
+button#button3 {
+position: absolute;
+top: 500px;
+background-color: #a8e6cf;
+color: white;
+font-size: 15px;
+margin-left: 860px;
+box-shadow: 3px 4px #CDCDCD;
+font-family: Baloo Bhaijaan;
+border: none;
+}
+
+/*button icons */
+i#icon {
+font-size: 50px;
+}
+
+/* progress bar */
+div.bar {
+background-color: #EAEAEA;
+height: 40px;
+width: 1280px;
+}
+/* The Modal (background) */
+div.modal {
+display: none; 
+position: fixed;
+z-index: 9999; 
+padding-top: 100px; 
+width: 100%;
+height: 100%; 
+overflow: hidden; 
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4); 
+}
+
+/* modal content */
+div.modal-content {
+background-color: #fefefe;
+margin-top: -110px;
+padding: 20px;
+border: 1px solid #888;
+width: 100%;
+}
+
+form.input {
+	position: fixed;
+	top: 140px;
+	margin-left: 350px;
+	
+}
+input.text {
+	position: fixed;
+	top: 170px;
+	border-bottom: solid;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-color: black;
+	width: 80px;
+	font-size: 80px;
+	text-align: center;
+	outline: none;
+}
+
+input#text1 {
+	margin-left: -212px;
+}
+input#text2 {
+	margin-left: -112px;
+}
+input#text3 {
+	margin-left: -12px;
+}
+input#text4 {
+	margin-left: 88px;
+}
+input#text5 {
+	margin-left: 188px;
+}
+div.exampletext {
+	position: absolute;
+	top: 50px;
+	margin-left: 140px;
+	font-size: 100px;
+}
+
+/*keyboard*/
+div.containerkeyboard {
+	position: absolute;
+	top: 300px;
+	margin-left: 138px;
+	height: 220px;
+	width: 500px;
+	background-color: gray;
+	border: outset;
+	border-width: 3px;
+	border-radius: 15px;
+	border-color: gray;
+	box-shadow: 8px 13px #E2E4E4;
+}
+button.btnk {
+	height: 28px;
+	width: 28px;
+	margin-top: 5px;
+	border: outset;
+	box-shadow: 2px 3px #6E6E6E;
+	padding: 1px 0px;
+	font-size: 13px;
+	font-weight: bold;
+}
+button#btn {
+	margin-right: 30px;
+}
+button#btn1 {
+	margin-left: -6px;
+}
+button#btn5 {
+	margin-left: 25px;
+}
+button#btn9 {
+	margin-left: 25px;
+}
+button#btn26 {
+	width: 45px;
+}
+button#btn27 {
+	width: 70px;
+}
+button#btn28 {
+	width: 55px;
+}
+button#btn41 {
+	width: 65px;
+}
+button#btn42 {
+	width: 70px;
+}
+button#btn54 {
+	width: 82px;
+}
+button#btn65 {
+	width: 82px;
+}
+button#btn66 {
+	width: 40px
+}
+button#btn68 {
+	width: 45px;
+}
+button#btn69 {
+	width: 210px;
+}
+button#btn70 {
+	width: 45px;
+}
+button#btn73 {
+	width: 40px;
+}

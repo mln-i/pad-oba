@@ -1,0 +1,44 @@
+/* body of page */
+body {
+margin: 0;
+height: 100%;
+overflow: hidden;
+}
+
+/* video frame */
+div.vidcontainer {
+	position: absolute; 
+	left: 240px; 
+	top: 20px;
+}
+
+iframe.introvid {
+	height: 570px;
+	width: 800px;
+}
+
+/* next page button */
+button#button1 { 
+position: absolute;
+background-color: #a8e6cf ;
+color: white;
+height: 120px;
+width: 150px;
+font-size: 70px;
+margin-left : 1090px; 
+margin-top : 450px; 
+box-shadow: 3px 4px #CDCDCD;
+font-family: Baloo Bhaijaan;
+border: none;
+} 
+
+/* icon inside button */
+i.fa {
+	position: relative;
+	top: 5px;
+}
+
+/* button hover action */
+button#button1:hover {
+	color: #FFAAA6;
+}
